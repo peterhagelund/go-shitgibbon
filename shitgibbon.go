@@ -40,7 +40,7 @@ func Make() string {
 	return fmt.Sprintf("%s%s", expletive, trochee)
 }
 
-// MakeAll makes all possible combinations
+// MakeAll makes all possible "shitgibbon" combinations.
 func MakeAll() []string {
 	shitgibbons := make([]string, 0, len(expletives)*len(trochees))
 	for _, trochee := range trochees {
