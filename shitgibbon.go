@@ -39,3 +39,14 @@ func Make() string {
 	trochee := trochees[rand.Intn(len(trochees))]
 	return fmt.Sprintf("%s%s", expletive, trochee)
 }
+
+// MakeAll makes all possible combinations
+func MakeAll() []string {
+	shitgibbons := make([]string, 0, len(expletives)*len(trochees))
+	for _, trochee := range trochees {
+		for _, expletive := range expletives {
+			shitgibbons = append(shitgibbons, fmt.Sprintf("%s%s", expletive, trochee))
+		}
+	}
+	return shitgibbons
+}
