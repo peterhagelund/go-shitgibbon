@@ -32,12 +32,13 @@ var trochees = []string{
 	"womble",
 }
 
+var rng = rand.New(rand.NewSource(time.Now().UTC().UnixNano()))
+
 // Make makes a random "shitgibbon".
 func Make() string {
-	rand.Seed(time.Now().UTC().UnixNano())
-	expletive := expletives[rand.Intn(len(expletives))]
-	trochee := trochees[rand.Intn(len(trochees))]
-	return fmt.Sprintf("%s%s", expletive, trochee)
+	expletive := expletives[rng.Intn(len(expletives))]
+	trochee := trochees[rng.Intn(len(trochees))]
+	return expletive + trochee
 }
 
 // MakeAll makes all possible "shitgibbon" combinations.
