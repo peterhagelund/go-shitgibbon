@@ -27,6 +27,7 @@ import (
 )
 
 func main() {
-	fmt.Println(shitgibbon.Make())
+	generator := shitgibbon.NewGenerator()
+	fmt.Println(generator.Make())
 }
 ```
