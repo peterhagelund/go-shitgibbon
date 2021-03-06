@@ -1,3 +1,3 @@
-module github.com/peterhagelund/shitgibbon
+module github.com/peterhagelund/go-shitgibbon
 
 go 1.16
