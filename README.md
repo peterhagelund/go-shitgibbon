@@ -13,7 +13,7 @@ See `LICENSE.txt`
 ## Installing
 
 ```bash
-go get -u github.com/peterhagelund/shitgibbon
+go get -u github.com/peterhagelund/go-shitgibbon
 ```
 
 ## Using
